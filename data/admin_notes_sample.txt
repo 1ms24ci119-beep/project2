@@ -1,0 +1,20 @@
+appointment was scheduled for the requested date
+appointment was confirmed by the clinic receptionist
+appointment was rescheduled at the patient's request
+follow up appointment was scheduled for next week
+patient was contacted regarding the appointment time
+patient was informed that the clinic received the form
+the consent form was received by the administrative office
+the referral document was received and added to the file
+the referral document is pending administrative review
+the record was updated with the new contact preference
+the patient requested a copy of the visit summary
+a copy of the requested document was prepared
+the document was sent through the approved secure channel
+the appointment reminder was sent to the registered contact
+the clinic received the completed registration form
+the registration form is awaiting staff review
+the requested appointment details were confirmed
+the patient was asked to contact the front desk
+the administrative team will follow up next business day
+the form was returned because a required field was missing
