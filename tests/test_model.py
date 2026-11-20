@@ -7,13 +7,14 @@ class ModelTests(unittest.TestCase):
     def setUp(self):
         self.model = NGramModel(n=3, alpha=1.0).fit([
             ["appointment", "was", "scheduled"],
+            ["appointment", "was", "scheduled"],
             ["appointment", "was", "confirmed"],
             ["form", "was", "received"],
         ])
 
-    def test_known_context_ranks_observed_continuations(self):
+    def test_known_context_ranks_frequent_continuation_first(self):
         suggestions = dict(self.model.suggest(["appointment", "was"], top_k=4))
-        self.assertGreater(suggestions["scheduled"], suggestions["received"])
+        self.assertGreater(suggestions["scheduled"], suggestions["confirmed"])
 
     def test_smoothed_distribution_sums_to_one(self):
         distribution = self.model.distribution(["unseen", "context"])
